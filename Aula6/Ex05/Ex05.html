@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começandp a usar DOM</title>
+    <style>
+        body{
+        background: yellow;
+            color: blue;
+            font: normal 14pt arial;
+
+
+        }
+    </style>
+</head>
+<body>
+    <H1>Iniciando passo a passo DOM</H1>
+    <p>Bora</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div id="msg"> Click aqui para continuar<div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsBy ('p')[0]
+       /* window.document.write('Esta escrito: ')
+        p1.style.color = ''
+        corpo.style.background = ''
+        alert(p1.innerText)*/
+        var d = window.document.querySelector('div#msg')
+        d.style.background='green'
+
+    </script>
+
+</body>
+</html>

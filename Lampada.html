@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: yellow;
+            color: white;
+            width: 110px;
+            height: 40px;
+            padding: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Lampada
+    </div>
+    
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+           a.innerText = 'Quebrou!'
+            a.style.background ='black'
+            }
+        function sair  (){
+            a.innerText = 'Apagou!'
+            a.style.background = 'grey'
+        }
+        function entrar (){
+            a.innerText = 'Acendeu!'
+            a.style.background = 'yellow'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro e Estrangeiro</title>
+</head>
+<body>
+    <h1>Brasileiro e Estrangeiro</h1>
+    <p>Digite seu pais de origem</p>
+    <input type="text" class="pais" id="pais">
+    <input type="button" value="verificar" onclick="Verificar()">
+    <div id="boue">Brasileiro ou Estrangeiro</div>
+    
+    <script>
+        function Verificar(){
+            var ent = document.querySelector('#pais').value.toUpperCase()     
+
+            if (ent == 'BRASIL') {
+                boue.innerText = `Você é Brasileiro`
+            } else {
+                boue.innerText = `Você é Estrangeiro`
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

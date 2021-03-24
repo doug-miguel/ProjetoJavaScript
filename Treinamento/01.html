@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino 01</title>
+    <style>
+        body {
+            background: rgb(100, 236, 236);
+            font: normal 15px arial;
+            color: black;
+        }
+        input{
+            color: rgb(216, 11, 11);
+            
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>Treinamento para desenvolver</h1>
+    <p>Digite sua idade</p>
+    <input type="number" class="idade" id="idade" placeholder="Sua Idade">
+    <button onclick="Verificar()" >Verificar</button>
+    <div id="saida">Você é maior ou menor</div>
+    
+        <script>
+            function Verificar(){
+                let ent = document.querySelector('#idade').value
+                //let saida = document.querySelector('#saida')
+
+                if (ent >= 18){
+                    saida.innerHTML = `Você é maior de idade você tem ${ent}`
+                } else {
+                    saida.innerHTML = `Você é menor de idade você tem ${ent}`
+                }
+                
+            }
+        </script>
+        
+</body>
+</html>
